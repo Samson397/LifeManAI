@@ -1,0 +1,61 @@
+{
+  "name": "lifemate-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "lint": "eslint .",
+    "start": "react-native start",
+    "test": "jest",
+    "pod-install": "cd ios && pod install && cd ..",
+    "clean": "rm -rf node_modules/ && yarn cache clean && yarn install && cd ios && pod deintegrate && pod cache clean --all && cd .. && yarn pod-install"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.1.0",
+    "@react-native-community/async-storage": "^1.12.1",
+    "@react-native-community/cli": "^15.1.3",
+    "@react-native-community/cli-platform-android": "^15.1.3",
+    "@react-native-community/cli-platform-ios": "^15.1.3",
+    "@react-navigation/bottom-tabs": "^6.6.1",
+    "@react-navigation/native": "^7.0.14",
+    "@react-navigation/stack": "^7.1.1",
+    "axios": "^1.5.0",
+    "firebase": "^10.3.1",
+    "lodash": "^4.17.21",
+    "openai": "^4.78.0",
+    "react": "18.2.0",
+    "react-native": "^0.76.6",
+    "react-native-ble-plx": "^3.4.0",
+    "react-native-camera": "^4.2.1",
+    "react-native-dotenv": "^3.4.11",
+    "react-native-gesture-handler": "^2.22.0",
+    "react-native-health": "^1.19.0",
+    "react-native-reanimated": "^3.16.6",
+    "react-native-safe-area-context": "^5.1.0",
+    "react-native-screens": "^4.5.0",
+    "react-native-vision-camera": "^4.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@babel/runtime": "^7.20.0",
+    "@react-native/babel-preset": "^0.73.18",
+    "@react-native/eslint-config": "^0.73.1",
+    "@react-native/metro-config": "^0.73.2",
+    "@react-native/typescript-config": "^0.73.1",
+    "@types/jest": "^29.5.0",
+    "@types/lodash": "^4.17.14",
+    "@types/react": "^18.2.6",
+    "@types/react-test-renderer": "^18.0.0",
+    "babel-jest": "^29.6.3",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "eslint": "^8.19.0",
+    "jest": "^29.6.3",
+    "prettier": "2.8.8",
+    "typescript": "5.0.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
